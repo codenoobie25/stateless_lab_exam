@@ -1,0 +1,127 @@
+Objective
+Create a shopping cart page using a StatelessWidget. Replicate the generated reference image above, focusing on nested layouts, reusable widgets, consistent styling, and button callbacks.
+
+Instructions
+Create a Flutter project named stateless_lab_exam.
+Inside lib/, create shopping_cart_page.dart.
+Implement a StatelessWidget named ShoppingCartPage.
+Configure main.dart to display this page.
+Use Flutter widgets to build every section. Do not use the reference image as the application’s interface or background.
+
+Task Requirements
+1. AppBar
+
+Include:
+
+A back-arrow IconButton on the left.
+The title “My Cart”.
+A shopping bag icon on the right with a badge displaying 3. Use a Stack to position the badge.
+2. Introduction Section
+
+Display:
+
+CAMPUS STORE inside a light-blue rounded container.
+Ready for checkout as a large, bold heading.
+Review your items before placing your order. as smaller supporting text.
+3. Delivery Information Card
+
+Create a rounded card containing:
+
+A location icon.
+Deliver to [Student’s Full Name].
+Matina, Davao City.
+A Change text button aligned to the right.
+4. Order Items
+
+Display “Order Items” and “3 items” on the same row.
+
+Below the heading, create three product cards using these records:
+
+
+
+Product
+
+Price
+
+Quantity
+
+Wireless Mouse
+
+PHP 450.00
+
+1
+
+USB-C Hub
+
+PHP 850.00
+
+1
+
+Laptop Stand
+
+PHP 700.00
+
+1
+
+Each product card must include:
+
+A relevant Material icon inside a light-blue rounded container.
+Product name in bold.
+Price in blue.
+A delete IconButton.
+Minus and plus buttons with the quantity displayed between them.
+Create a reusable StatelessWidget named CartItemCard that accepts the product name, price, quantity, and icon through constructor parameters. Use it for all three products.
+
+5. Discount Banner
+
+Create a light-blue rounded banner containing:
+
+A discount or tag icon.
+STUDENT10 applied.
+10% discount on items.
+A check-circle icon on the right.
+6. Payment Summary
+
+Create a white rounded card with the heading “Payment Summary”.
+
+
+Description
+
+Amount
+
+Subtotal
+
+PHP 2,000.00
+
+Discount (10%)
+
+− PHP 200.00
+
+Delivery Fee
+
+PHP 50.00
+
+Total
+
+PHP 1,850.00
+
+Use aligned rows for labels and amounts. Add a divider above the total and emphasize the total using bold text.
+
+7. Place Order Button
+
+Add a full-width blue button below the summary with:
+
+A lock icon.
+The label “Place Order”.
+Rounded corners and readable white text.
+
+This is a static interface examination. Quantities, products, and totals remain fixed when buttons are pressed. State management, actual checkout, database connections, and navigation are not required.
+
+Layout and Styling Requirements
+Follow the reference image’s section order, colors, alignment, and visual hierarchy.
+Use a light-gray page background, white cards, and blue accents.
+Apply consistent padding, spacing, and rounded corners.
+Use Row, Column, Expanded or Flexible, and Stack appropriately.
+Make the page vertically scrollable so all sections remain accessible on smaller screens.
+Avoid overflow errors.
+Use standard Flutter widgets without third-party UI packages. Similar Material icons are acceptable.
